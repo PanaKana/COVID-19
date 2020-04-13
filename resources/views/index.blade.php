@@ -92,7 +92,7 @@
                             <div class="box-cell p-x-3 p-y-1 bg-success darken">
                                 <div class="pull-xs-left font-weight-semibold font-size-12">PASIEN SEMBUH</div>
                                 <div class="pull-xs-right font-size-12">
-                                    {{number_format($data[0]['sembuh'] / $jumlah * 100, 2)}}%</div>
+                                    {{number_format($data[0]['sembuh'] / $jumlah * 100, 1)}}%</div>
                             </div>
                         </div>
                         <div class="box-row">
@@ -110,7 +110,7 @@
                             <div class="box-cell p-x-3 p-y-1 bg-warning darken">
                                 <div class="pull-xs-left font-weight-semibold font-size-12">PASIEN POSITIF</div>
                                 <div class="pull-xs-right font-size-12">
-                                    {{number_format(str_replace(',','',$data[0]['positif']) / $jumlah * 100, 2)}}%</div>
+                                    {{number_format(str_replace(',','',$data[0]['positif']) / $jumlah * 100, 1)}}%</div>
                             </div>
                         </div>
                         <div class="box-row">
@@ -129,7 +129,7 @@
                             <div class="box-cell p-x-3 p-y-1 bg-danger darken">
                                 <div class="pull-xs-left font-weight-semibold font-size-12">PASIEN MENINGGAL</div>
                                 <div class="pull-xs-right font-size-12">
-                                    {{number_format($data[0]['meninggal'] / $jumlah * 100, 2)}}%</div>
+                                    {{number_format($data[0]['meninggal'] / $jumlah * 100, 1)}}%</div>
                             </div>
                         </div>
                         <div class="box-row">
